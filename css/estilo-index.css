@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+/*Header*/
+
+header{
+    
+    
+}
+body{
+    width: 100%;
+    background: #ede0d4;
+}
+
+.navegacion{
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    position: fixed;
+    background: #9c6644;
+    color: white;
+}
+.menu{
+    list-style: none;
+}
+
+.menu>li {
+    position: relative;
+    display: inline-block;
+}
+.menu>li>a{
+    display: block;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 700;
+    color: #ede0d4;
+    padding: 40px 20px 40px 20px;
+}
+.menu li a:hover{
+    background: #7f5539;
+}
+.submenu{
+    width: 100%;
+    background: #9c6644;
+    position: absolute;
+    list-style: none;
+    visibility: hidden
+}
+.submenu li a{
+    display: block;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ede0d4;
+    padding: 20px;
+    background: #9c6644;
+    text-justify: initial;
+}
+.menu li:hover .submenu{
+    visibility: visible;
+    
+}
+
+.logo{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.logo #logo{
+    padding: 0px 0px 0px 20px;
+    width: 200px;
+}
+section{
+    
+    
+}
+
+/* seccion 1 .........................*/
+
+#seccion_1{
+    background-image: url('../img/gaticos-1.jpg');
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#frase_inicial{
+    color: #9c6644;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: italic;
+    text-align: center;
+    margin-left: 60%;
+    margin-right: 40px;
+    padding: 80px 20px 80px 20px;
+    font-size: 60px;
+    font-weight: 700;
+    background-color: #ede0d4;
+}
+/* seccion 2 ...........................*/
+#seccion_2{
+    
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 370px 370px;
+}
+#titulo_seccion_2{
+    scroll-margin-top: 3.5ex;
+    scroll-behavior: smooth;
+    font-size: 70px;
+    color: #9c6644;
+    text-align: left;
+    margin-top: 1%;
+    margin-left: 1.5%;
+    margin-right: 80%;
+}
+/* grid animada*/
+.productos{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin: 30px;
+    overflow: hidden;
+    cursor: pointer;
+    align-items: center;
+    
+}
+.productos img{
+    z-index: 1;
+    display: block;
+    width: 100;
+    height: auto;
+    transition: all 500ms ease-out;
+}
+.productos>h2{
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    align-self: flex-end;
+    padding:15px;
+    margin-bottom: 10px;
+    background-color: #b7b7a4;
+    font-size: 30px;
+}
+.productos .capa{
+    z-index: 1;
+    position: absolute;
+    align-self: center;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+}
+.productos:hover .capa{
+    opacity: 1;
+    visibility: visible;
+}
+.productos:hover img{
+    transform: scale(1.1);
+}
+
+
+.parallax{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+.parrafos{
+    display: flex;
+    justify-content:space-between;
+}
+.separacion{
+    padding: 5%;
+    background-image: url('../img/patitas.svg');
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.texto h2{
+}
+.texto p{
+ 
+}
+
+/*Secccion 3 ............................*/
+
+#seccion_3{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 840px 840px;
+    background-color: #a5a58d;
+}
+#texto_seccion_3{
+    scroll-margin-top: 3.5ex;
+    scroll-behavior: smooth;
+    padding: 20px;
+    color: #9c6644;
+    font-size: 70px
+}
+
+#seccion_3 .texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#seccion_3 .texto h2{
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    color: black;
+    font-size: 50px;
+}
+#seccion_3 .texto p{
+    padding: 20px;
+    font-size: 30px;
+    text-align: justify;
+}
+#seccion_3 .imagen{
+    overflow: hidden;
+}
+#seccion_3>img{
+    z-index: 1;
+    display: block;
+    position: fixed;
+    width: 100;
+    height: 100vh;
+    height: auto;
+}
+
+
+
+/*Footer ................................*/
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #6b705c;;
+}
+
+footer>ul {
+    list-style: none;
+    font-size: 20px;
+    color: #ede0d4;
+    padding: 5% 3% 7%;
+    align-self: center;
+    margin-right: 5%;
+}
+footer>ul>li{
+    margin-left: 10%;
+    width: 150%;
+}
+footer>ul>li>ul {
+    list-style: none;
+    font-size: 20px;
+    color: #ede0d4;
+}
+footer>ul>li>ul>li {
+    width: 150%;
+    margin-left: 10%;
+    margin-top: 3%;
+}
+footer #lineafoot{
+    padding: 2px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: #ede0d4;
+
+}
+footer>article{
+    padding: 5%;
+}
+footer>article>img{
+    margin-top: 10%;
+    width: 10%;
+    align-self: center;
+}
+

@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: PlayfairDisplay-Regular
+font link: https://fonts.google.com/specimen/Playfair+Display
+font author: Claus Eggers Sørensen
+font author site: https://forthehearts.net/
+
+
+icon designer: Anne Bittencourt 
+icon designer link: /annebittencourt
+        
+{"bg":"#F1A418","icon":"#C36A2B","font":"#ffffff","slogan":"#ffffff"}
+      

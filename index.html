@@ -1,0 +1,126 @@
+<!DOCTYPE html> <!-- Etiqueta que indica docuento version 5.0 de HTML-->
+<html> <!-- Esta etiqueta indica al explorador que existe un doc tipo html-->
+<head>
+    
+    <meta charset="UTF-8">
+    <meta charset="ISO-8859">
+    <meta name="author" content="Daniel Mauricio Cuesta"/>
+    <meta name="description" content="Es una pagina de venta de productos para mascotas"/>
+    <meta name="keywords" content="venta,mascotas,productos,ofertas,animales">
+    <meta name="copyright" content="https://www.youtube.com/">
+    <meta name="date" content="2021-09-06T03:51:30+00:00">
+    <meta property="og:title" content="Titulo" />
+    <meta property="og:image" content=" http://example.com/image.jpg" />
+
+    <link rel= "stylesheet" type= "text/css" href="css\estilo-index.css">
+
+    <title>tienda de mascotas</title>
+
+</head>
+<body>
+    <header>
+		<nav class = "navegacion">
+            <article class = "logo">
+                <img id="logo" src="img\logo prueba.svg" alt = "Imagen">
+            </article>
+            <ul class="menu">
+				<!--items de la lista-->
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="informacion.html">Quienes somos</a>
+				<!--creamos una sublista-->
+					<ul class="submenu">
+						<!--items de la sublista-->
+						<li><a href="#vision">Vision</a></li>
+						<li><a href="#mision">Mision</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Productos y servicios </a>
+					<!--items de la sublista-->
+					<ul class="submenu">
+						<li><a href="#titulo_seccion_2">Productos</a></li>
+						<li><a href="#texto_seccion_3">Servicios </a></li>
+						<li><a href="#">Aliados estrategicos </a></li>
+					</ul>
+				</li>
+				<!--creamos una sublista-->
+				<li><a href="Contacto.html">Contacto </a></li>
+			</ul> 
+		</nav>
+	</header>
+        <section class="parallax" id="seccion_1">
+            <p id="frase_inicial">"Por que ellos tambien son parte de la  familia"</p>
+        </section>
+        <h2 id="titulo_seccion_2">Productos</h2>
+        <section id="seccion_2" class="grid">
+            <article class="productos">
+                <img src="img\Comida-animales.jpg" alt = "Imagen">
+                <h2>Alimentos</h2>
+                <article class="capa">
+                </article>
+            </article>
+            <article class="productos">
+                <img src="img\Juguete-animales.jpg" alt = "Imagen">
+                <h2>Juguetes</h2>
+                <article class="capa">
+            </article>
+            </article>
+            <article class="productos">
+                <img src="img\Accesorios-animales.jpg" alt = "Imagen">
+                <h2>Accesorios</h2>
+                <article class="capa">
+                </article>
+            </article>
+            <article class="productos">
+                <img src="img\Medicina-animales.jpg" alt = "Imagen">
+                <h2>Medicina</h2>
+                <article class="capa">
+                </article>
+            </article>
+        </section>
+        <h2 id="texto_seccion_3">Servicios</h2>
+        <section id="seccion_3" >
+            <article class="texto">
+                <h2>Estetico</h2>
+                <p>
+                    En nuestra empresa nos enfocamos en el el confort de tus mascostas, 
+                    teniendo principal atencion en todos los detalles, como lo es la estetica
+                    y que tus animales salgan preciosos.
+                </p>
+            </article>
+            <article class="imagen">
+                <img src="img\seccion_3_img_1.jpg" alt = "Imagen">
+            </article>
+            <article class="imagen">
+                <img src="img\seccion_3_img_2.jpg" alt = "Imagen">
+            </article>
+            <article class="texto">
+                <h2>Medico</h2>
+                <p>
+                    El aspecto de salud para tu mascota es muy importante, por lo que contamos con excelentes profesionales
+                    ,que van a garantizar la salud de tu mascota en el momento en el que lo necesites.
+                </p>
+            </article>
+        </section>
+    <footer>
+        <ul>
+            <li>para mas informacion contactanos:
+                <ul>
+                    <li>Tel: 3186709800</li>
+                    <li>mail: petstore@correoelectronico.com</li>
+                </ul>
+            </li>
+        </ul>
+        <article id="lineafoot"></article>
+        <article>
+            <img  src="img\instagram_logo.svg" alt = "Imagen">
+            <img  src="img\facebook_logo.svg" alt = "Imagen">
+            <img  src="img\wpp_logo.svg" alt = "Imagen">
+
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+                <img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" />
+            </a>
+            <br />Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Licencia Creative Commons Atribución-NoComercial-SinDerivadas 4.0 Internacional</a>.
+        </article>
+    </footer>
+</body>
+</html>

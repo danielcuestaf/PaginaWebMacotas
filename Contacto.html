@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta charset="ISO-8859">
+        <meta name="author" content="Daniel Mauricio Cuesta"/>
+        <meta name="description" content="Es una pagina de venta de productos para mascotas"/>
+        <meta name="keywords" content="venta,mascotas,productos,ofertas,animales">
+        <meta name="copyright" content="https://www.youtube.com/">
+        <meta name="date" content="2021-09-06T03:51:30+00:00">
+        <meta property="og:title" content="Titulo" />
+        <meta property="og:image" content=" http://example.com/image.jpg" />
+        <title>formulario</title>
+    <link rel="stylesheet" type="text/css" a href="css\estilo.css"></link>        
+    </head>
+    <body>
+        <header>
+            <nav class = "navegacion">
+                <article class = "logo">
+                    <img id="logo" src="img\logo prueba.svg" alt = "Imagen">
+                </article>
+                <ul class="menu">
+                    <!--items de la lista-->
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="informacion.html">Quienes somos</a>
+                    <!--creamos una sublista-->
+                        <ul class="submenu">
+                            <!--items de la sublista-->
+                            <li><a href="#vision">Vision</a></li>
+                            <li><a href="#mision">Mision</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Productos y servicios </a>
+                        <!--items de la sublista-->
+                        <ul class="submenu">
+                            <li><a href="#catalogo">Productos </a></li>
+                            <li><a href="#">Servicios </a></li>
+                            <li><a href="#">Aliados estrategicos </a></li>
+                        </ul>
+                    </li>
+                    <!--creamos una sublista-->
+                    <li><a href="Contacto.html">Contacto </a></li>
+                </ul> 
+            </nav>
+        </header>
+            <section>
+            <article>
+                <h2>Formulario Datos</h2>
+                <article class="contenedor"></article>
+                    <form action="#" method="GET" enctype="multipart/form-data" autocomplete="off" class="formulario">
+                    
+                        <p>
+                            <!--Elemento label-->
+                            <input class="nombre" type="text" id="PNombre" name="PNombre" placeholder="Primer Nombre">
+                        </p>
+                        <p>
+                            <input class="nombre" type="text" id="SNombre" name="SNombre" placeholder="Segundo Nombre">
+                        </p>
+                        <p>
+                            <input class="nombre" id="PApe" name="PApe" placeholder="Primer Apellido">
+                        </p>
+                        <p>
+                            
+                            <input class="nombre" type="text" id="SApa" name="SApa" placeholder="Segundo Apellido">
+                        </p>
+                        <p>
+                            
+                            <input class="email" type="email" id="mail" name="mail" placeholder="E-mail" pattern="[A-Za-z0-9._%+-]{3,}@[a-zA-Z]{3,}([.]{1}[a-zA-Z]{2,}|[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,})">
+                        </p>
+                        <p>
+                            <select class="estrato" name="Est" id= "Est">
+                                <option value="est 1">1</option>
+                                <option value="est 2">2</option>
+                                <option value="est 3">3</option>
+                                <option value="est 4">4</option>
+                                <option value="est 5">5</option>
+                                <option value="est 6">6</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label for="Tip_Doc">Tipo de documento:</label>
+                            <select class="docu" name="Tip_Doc" id= "Tip_Doc">
+                                <option value="Ti">Tarjeta de Identidad</option>
+                                <option value="Cc">Cedula de Ciudadania</option>
+                                <option value="Ce">Cedula de extranjeria</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label class="numero_doc" for="Numdoc">Número de documento</label>
+                            <input class="numero_doc" type="text" id="Numdoc" name="Numdoc" placeholder="Numero de Documento">
+                        </p>
+                        <p>
+                            <label class="numero_cel" for="Numcel">Número de Celular</label>
+                            <input class="numero_cel" type="text" id="Numcel" name="Numdoc" placeholder="Numero de Celular">
+                        </p>
+                        <p>
+                            <label class="ciudad" for="Ciu">Ciudad de Residencia</label>
+                            <input class="ciudad" type="text" id="Ciu" name="Ci" placeholder="Ciudad de residencia">
+                        </p>
+                        <p>
+                            <label class="fecha" for="Fech">Fecha de nacimiento</label>
+                            <input class="fecha" type="date" id="fech" name="Fech">
+                        </p>
+                        <p>
+                            <label for="Genero">Seleccione genero</label>
+                            <br>
+                            <input type="radio" name="Genero" value="Masculino" >Masculino
+                            <br>
+                            <input type="radio" name="Genero" value="Femenino" >Femenino
+                            <br>
+                            <input type="radio" name="Genero" value="Otros" >Otros
+
+                        </p>
+                        <p>
+                            <label class = "Lenguaje" for="lenpro">Lenguaje de programacion</label>
+                            <br>
+                            <input type="checkbox" name="lenpro" value="Python" >Python
+                            <br>
+                            <input type="checkbox" name="lenpro" value="Java" >Java
+                            <br>
+                            <input type="checkbox" name="lenpro" value="C#" >C#
+
+                        </p>
+
+                        <p>
+                            <label for="Archivos">Soporte de documentos</label>
+                            <input class="archivo" type="file" name="Archivos" accept="image/*,audio/*,video/*,.pdf";>
+                        </p>
+                        <p>
+                            comentario: <textarea name="comentario"></textarea>
+                        </p>
+                        <p>
+                            <button type="submit">Enviar</button>
+                            <button type="reset">Borrar</button>
+                        </p>
+                    </form>
+                </article>
+            </section>
+        <footer>
+            <ul>
+                <li>para mas informacion contactanos:
+                    <ul>
+                        <li>Tel: 3186709800</li>
+                        <li>mail: petstore@correoelectronico.com</li>
+                    </ul>
+                </li>
+            </ul>
+            <article id="lineafoot"></article>
+            <article>
+                <img  src="img\instagram_logo.svg" alt = "Imagen">
+                <img  src="img\facebook_logo.svg" alt = "Imagen">
+                <img  src="img\wpp_logo.svg" alt = "Imagen">
+            </article>
+        </footer>
+    </body>
+</html>
